@@ -17,9 +17,13 @@ red - new
 blue - changed
 green - staged
 
-( add -> create commit -> push)
+( add -> create commit(dod nosaukumu!!) -> push)
 komandas prieks Git
 1. git status - tekosais stavoklis ,kas dzests ,pievienots u.t.t;(pec katras operacijas
 2. git add --all (pievienot visus failus)
 3. git commit -m"nosaukums"
 4. git push
+
+////RM - RF / izdzes visu////
+
+CLI
