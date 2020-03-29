@@ -1,0 +1,160 @@
+<html>
+<body>
+<canvas id='game' width='500' height='500' style="border: 1px solid black"></canvas>
+<script>
+    /**
+     * Задача 1: создавать маленький темно-зеленый квадрат на карте в случайной позиции
+     * Задача 2: когда игрок соприкоснется с маленьким квадратом - переместить квадрат в новую случайную позицию
+     * Задача 3: увеличить размер игрока после того как он "съест" маленький квадратик
+     */
+    const canvas = document.getElementById('game');
+    const context = canvas.getContext('2d');
+
+    let playerX = 0;
+    let playerY = 0;
+    let foodY = Math.round(Math.random()* 500 );
+    let foodX = Math.round(Math.random()* 500 );
+    let isLeftPressed = false;
+    let isRightPressed = false;
+    let isUpPressed = false;
+    let isDownPressed = false;
+    let isLeftShiftPressed = false;
+    let isRightShiftPressed = false;
+    let playerSize = 50
+
+    function draw(){
+        input();
+        foodCollision();
+        context.clearRect(0, 0, 500, 500);
+
+        if (isLeftPressed || isRightPressed || isUpPressed || isDownPressed){
+            context.fillStyle = '#74ff48';
+        } else {
+            context.fillStyle = '#ff3a45';
+        }
+        context.fillRect(playerX, playerY, playerSize, playerSize);
+        context.fillStyle = '#2b6632';
+    
+        context.fillRect(
+            foodX,
+            foodY,
+            30,
+            30
+        );
+
+        window.requestAnimationFrame(draw);
+    }
+
+    function foodCollision() {
+        if (foodX > playerX && foodX < playerX + playerSize ||
+            foodX + 30 > playerX && foodX + 30 < playerX + playerSize    
+        ) {
+            if (foodY > playerY && foodY < playerY + playerSize ||
+                foodY + 30 > playerY && foodY + 30 < playerY + playerSize    
+            ) {
+                foodX = Math.round(Math.random() * 500)
+                foodY = Math.round(Math.random() * 500)
+
+                playerSize = playerSize + 30
+            }
+        }
+    }
+
+
+    function input(){
+
+        if (isDownPressed){
+            playerY++;
+            if (isLeftShiftPressed){
+                playerY = playerY + 1;
+            }
+        }
+        if (isRightPressed){
+            playerX++;
+            if (isLeftShiftPressed){
+                playerX = playerX + 1;
+            }
+        }
+        if (isUpPressed){
+            playerY--;
+            if (isLeftShiftPressed){
+                playerY = playerY - 1;
+            }
+        }
+        if (isLeftPressed){
+            playerX--;
+            if (isLeftShiftPressed){
+                playerX = playerX - 1;
+            }
+        }
+        
+        // if (isDownPressed){
+        //     y++;
+        //     if (isRightShiftPressed){
+        //         y = y + 6;
+        //     }
+        // }
+        // if (isRightPressed){
+        //     x++;
+        //     if (isRightShiftPressed){
+        //         x = x + 6;
+        //     }
+        // }
+        // if (isUpPressed){
+        //     y--;
+        //     if (isRightShiftPressed){
+        //         y = y - 6;
+        //     }
+        // }
+        // if (isLeftPressed){
+        //     x--;
+        //     if (isRightShiftPressed){
+        //         x = x - 6;
+        //     }
+        // }
+    }
+        
+    
+    draw();
+
+    window.addEventListener('keydown', event => {
+            if (event.code === 'ArrowLeft') {
+                isLeftPressed = true;
+            } else if (event.code === 'ArrowRight') {
+                isRightPressed = true;
+            } else if (event.code === 'ArrowUp') {
+                isUpPressed = true;
+            } else if (event.code === 'ArrowDown') {
+                isDownPressed = true;   
+            } else if (event.code === 'ShiftLeft') {
+                isLeftShiftPressed = true;
+            } else if (event.code === 'ShiftRight') {
+                isRightShiftPressed = true;
+            }
+
+        });
+
+        window.addEventListener('keyup', event => {
+        
+            if (event.code === 'ArrowLeft') {
+                isLeftPressed = false;
+            } else if (event.code === 'ArrowRight') {
+                isRightPressed = false;
+            } else if (event.code === 'ArrowUp') {
+                isUpPressed = false;
+            } else if (event.code === 'ArrowDown') {
+                isDownPressed = false;
+            } else if (event.code === 'ShiftLeft'){
+                isLeftShiftPressed = false;
+            } else if (event.code === 'ShiftRight'){
+                isRightShiftPressed = false;
+            }
+        });
+
+            
+
+            
+</script>
+</body>
+</html>
+

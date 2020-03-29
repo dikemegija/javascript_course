@@ -1,0 +1,23 @@
+/*json - javascript object notation
+$ npm install --save prompt-sync ( pievienot biblioteku )
+$ npm uninstall --name
+ ja kauktkas notiek neta tad uzreiz ieinstelet pa jaunam.
+no uzdevuma
+
+*/
+
+/* GIT
+no projekta saknes sak
+source control menegment - kontrolversijas sistema
+saglaba informaciju, un ar to var dalities
+
+COMMIT - saglabasanas punkti, fikset
+repository -
+red - new
+blue - changed
+green - staged
+
+( add -> create commit -> push)
+komandas prieks Git
+1. git status - tekosais stavoklis ,kas dzests ,pievienots u.t.t;
+2. git add --all

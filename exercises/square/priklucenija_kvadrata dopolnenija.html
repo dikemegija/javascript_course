@@ -1,0 +1,133 @@
+<html>
+<body>
+<canvas id='game' width='700' height='700' style="border: 1px solid black"></canvas>
+<script>
+    const canvas = document.getElementById('game');
+    const context = canvas.getContext('2d');
+
+    let x = 0;
+    let y = 0;
+    let isLeftPressed = false;
+    let isRightPressed = false;
+    let isUpPressed = false;
+    let isDownPressed = false;
+    let isLeftShiftPressed = false;
+    let isRightShiftPressed = false;
+
+
+    function draw(){
+        input();
+        context.clearRect(0, 0, 700, 700)
+
+        if (isLeftPressed || isRightPressed || isUpPressed || isDownPressed){
+            context.fillStyle = '#74ff48'
+        } else {
+            context.fillStyle = '#ff3a45'
+        }
+        if (isRightShiftPressed){
+            context.fillStyle = '#f719f4'
+        }    
+        if (isLeftShiftPressed){
+            context.fillStyle = '#14e6f5'
+        }
+        context.fillRect(x, y, 50, 50);
+        
+        
+        window.requestAnimationFrame(draw);
+    }
+
+    function input(){
+
+        if (isDownPressed){
+            y++;
+            if (isLeftShiftPressed){
+                y = y + 1;
+            }
+        }
+        if (isRightPressed){
+            x++;
+            if (isLeftShiftPressed){
+                x = x + 1;
+            }
+        }
+        if (isUpPressed){
+            y--;
+            if (isLeftShiftPressed){
+                y = y - 1;
+            }
+        }
+        if (isLeftPressed){
+            x--;
+            if (isLeftShiftPressed){
+                x = x - 1;
+            }
+        }
+        
+        if (isDownPressed){
+            y++;
+            if (isRightShiftPressed){
+                y = y + 6;
+            }
+        }
+        if (isRightPressed){
+            x++;
+            if (isRightShiftPressed){
+                x = x + 6;
+            }
+        }
+        if (isUpPressed){
+            y--;
+            if (isRightShiftPressed){
+                y = y - 6;
+            }
+        }
+        if (isLeftPressed){
+            x--;
+            if (isRightShiftPressed){
+                x = x - 6;
+            }
+        }
+    }
+        
+    
+    draw();
+
+    window.addEventListener('keydown', event => {
+            if (event.code === 'ArrowLeft') {
+                isLeftPressed = true;
+            } else if (event.code === 'ArrowRight') {
+                isRightPressed = true;
+            } else if (event.code === 'ArrowUp') {
+                isUpPressed = true;
+            } else if (event.code === 'ArrowDown') {
+                isDownPressed = true;   
+            } else if (event.code === 'ShiftLeft') {
+                isLeftShiftPressed = true;
+            } else if (event.code === 'ShiftRight') {
+                isRightShiftPressed = true;
+            }
+
+        });
+
+        window.addEventListener('keyup', event => {
+            if (event.code === 'ArrowLeft') {
+                isLeftPressed = false;
+            } else if (event.code === 'ArrowRight') {
+                isRightPressed = false;
+            } else if (event.code === 'ArrowUp') {
+                isUpPressed = false;
+            } else if (event.code === 'ArrowDown') {
+                isDownPressed = false;
+            } else if (event.code === 'ShiftLeft'){
+                isLeftShiftPressed = false;
+            } else if (event.code === 'ShiftRight'){
+                isRightShiftPressed = false;
+            }
+        });
+
+            
+
+            
+</script>
+</body>
+</html>
