@@ -11,25 +11,24 @@ while (true) {
     console.log(parseInt(expression))
     console.log(typeof expression[1]);*/
 
-    let first = parseInt(exp[0] );
+    let first = parseInt(exp[0]);
     /*console.log(first);*/
     let second = parseInt(exp[2]);
     /*console.log(second);*/
     let operation = exp[1];
 
-    if (isNaN(first) || isNaN(second)){
-        console.log(" Only numbers are allowed in expression! ");
 
-
-    }
-
-
-   /* if (isNaN(second)){
-        console.log("Invalid number");
-    }*/
+    /* if (isNaN(second)){
+         console.log("Invalid number");
+     }*/
 
     if (exp.length !== 3) {
-     console.log(" invalid expression! ");
+        console.log(" invalid expression! ");
+        continue;
+    }
+    if (isNaN(first) || isNaN(second)) {
+        console.log(" Only numbers are allowed in expression! ");
+        continue;
     }
     /*if (operation === "+" ||  "-"|| "*"||"/"){
         console.log()
@@ -39,42 +38,33 @@ while (true) {
 
     switch (operation) {
         case "+":
-            console.log(add(first,second));
+            console.log(add(first, second));
             break;
         case "-":
-            console.log(subtract(first,second));
+            console.log(subtract(first, second));
             break;
         case "*":
-            console.log(multiply(first,second));
+            console.log(multiply(first, second));
             break;
         case "/" :
-            console.log(divide(first,second));
+            console.log(divide(first, second));
             break;
         default:
-            console.log(exp[1]+" is invalid operator! ")
+            console.log(exp[1] + " is invalid operator! ")
     }
-
-
-
-
 }
+
 function add(a, b) {
     return a + b;
 }
 
-
-function subtract(a , b){
+function subtract(a, b) {
     return a - b;
 }
 
-
-
-function multiply(a, b){
+function multiply(a, b) {
     return a * b;
 }
-
-
-
 
 function divide(a, b) {
     return a / b;
