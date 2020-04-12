@@ -1,11 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="14fdae85-07ab-4a31-b5c8-2e42aa1b6ff6" name="Default Changelist" comment="" />
+    <list default="true" id="14fdae85-07ab-4a31-b5c8-2e42aa1b6ff6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../program.js" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="JsBowerSettings">
     <node-interpreter value="project" />
@@ -19,6 +34,7 @@
     <auto-save>true</auto-save>
   </component>
   <component name="ProjectId" id="1ZczjBA8TZFdXaXKiyp4ntZIupK" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -26,16 +42,31 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../exericises home" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JavaScript" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Megija\Desktop\JavaScript\exercises\calculator" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Node.js.average.js">
+    <configuration name="average.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/average.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
     <configuration name="index.js" type="NodeJSConfigurationType" nameIsGenerated="true" path-to-js-file="index.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.average.js" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -52,6 +83,8 @@
       <workItem from="1585175311791" duration="311000" />
       <workItem from="1585175633046" duration="1986000" />
       <workItem from="1585228048563" duration="5152000" />
+      <workItem from="1586259259421" duration="22065000" />
+      <workItem from="1586686605915" duration="850000" />
     </task>
     <servers />
   </component>
@@ -75,26 +108,30 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="692" y="310" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1585477497146" />
+    <state x="982" y="0" key="CommitChangelistDialog2" timestamp="1586444820931">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="982" y="0" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1586444820931" />
     <state x="322" y="230" key="FileChooserDialogImpl" timestamp="1585228273002">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="322" y="230" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1585228273002" />
-    <state width="1877" height="352" key="GridCell.Tab.0.bottom" timestamp="1585174829940">
+    <state width="1311" height="268" key="GridCell.Tab.0.bottom" timestamp="1586530788563">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1585174829940" />
-    <state width="1877" height="352" key="GridCell.Tab.0.center" timestamp="1585174829939">
+    <state width="1311" height="268" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1586530788563" />
+    <state width="1311" height="268" key="GridCell.Tab.0.center" timestamp="1586530788563">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1585174829939" />
-    <state width="1877" height="352" key="GridCell.Tab.0.left" timestamp="1585174829939">
+    <state width="1311" height="268" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1586530788563" />
+    <state width="1311" height="268" key="GridCell.Tab.0.left" timestamp="1586530788563">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1585174829939" />
-    <state width="1877" height="352" key="GridCell.Tab.0.right" timestamp="1585174829939">
+    <state width="1311" height="268" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1586530788563" />
+    <state width="1311" height="268" key="GridCell.Tab.0.right" timestamp="1586530788563">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1585174829939" />
+    <state width="1311" height="268" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1586530788563" />
     <state width="1877" height="352" key="GridCell.Tab.1.bottom" timestamp="1585174829940">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -151,6 +188,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="656" y="349" key="com.intellij.ide.util.TipDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1585228089737" />
+    <state x="59" y="241" key="run.anything.popup" timestamp="1586263397774">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="59" y="241" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1586263397774" />
     <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1585176207757">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
