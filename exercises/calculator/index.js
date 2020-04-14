@@ -1,35 +1,37 @@
 const prompt = require('prompt-sync')();
 
 
-while (true) {
+/*while (true) {
     const expression = prompt('Please enter mathematical expression ');
-    /*console.log(expression.split(" "));*/
+    console.log(calculate(expression));
+}*/
+function space(exp) {
+    const array = [];
+    for (i = 0; i < exp.length; i++) {
+        if (exp[i] !== "") {
+            array.push(exp[i]);
+        }
+    }
+    return array
+}
+
+function calculate(expression) {
     let exp = expression.split(' ');
-    /*console.log(exp);
-    console.log(exp.length);
-   console.log(expression.length);
-    console.log(parseInt(expression))
-    console.log(typeof expression[1]);*/
+    const fixedExp = space(exp);
 
-    let first = parseInt(exp[0]);
-    /*console.log(first);*/
-    let second = parseInt(exp[2]);
-    /*console.log(second);*/
-    let operation = exp[1];
+    let first = parseInt(fixedExp[0]);
+    let second = parseInt(fixedExp[2]);
+    let operation = fixedExp[1];
 
 
-    /* if (isNaN(second)){
-         console.log("Invalid number");
-     }*/
-
-    if (exp.length !== 3) {
-        console.log(" invalid expression! ");
-        continue;
+    if (fixedExp.length !== 3) {
+        return "invalid expression!";
     }
     if (isNaN(first) || isNaN(second)) {
-        console.log(" Only numbers are allowed in expression! ");
-        continue;
+        return " Only numbers are allowed in expression! ";
     }
+
+
     /*if (operation === "+" ||  "-"|| "*"||"/"){
         console.log()
     } else {
@@ -38,34 +40,40 @@ while (true) {
 
     switch (operation) {
         case "+":
-            console.log(add(first, second));
-            break;
+            return add(first, second);
         case "-":
-            console.log(subtract(first, second));
-            break;
+            return subtract(first, second);
         case "*":
-            console.log(multiply(first, second));
-            break;
+            return multiply(first, second);
         case "/" :
-            console.log(divide(first, second));
-            break;
+            return divide(first, second);
+        case "%"  :
+            return percentage(first, second);
         default:
-            console.log(exp[1] + " is invalid operator! ")
+            //return exp[1] + " is invalid operator! ";
+            return "Your operator is invalid!"
+
+    }
+
+    function add(a, b) {
+        return a + b;
+    }
+
+    function subtract(a, b) {
+        return a - b;
+    }
+
+    function multiply(a, b) {
+        return a * b;
+    }
+
+    function divide(a, b) {
+        return a / b;
+    }
+
+    function percentage(a, b) {
+        return a % b;
     }
 }
 
-function add(a, b) {
-    return a + b;
-}
-
-function subtract(a, b) {
-    return a - b;
-}
-
-function multiply(a, b) {
-    return a * b;
-}
-
-function divide(a, b) {
-    return a / b;
-}
+module.exports = calculate;
