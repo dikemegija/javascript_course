@@ -12,7 +12,7 @@ function test(name, f) {
 }
 
 function assertEquals(a, b) {
-    if (a != b) {
+    if (a !== b) {
         /*met kludu throw*/
         throw a + " is not equals " + b
     }
