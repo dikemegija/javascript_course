@@ -30,13 +30,14 @@ function numberOfSteps(num) {
     let currentNumber = num;
     let numberOfSteps = 0;
     while (currentNumber !== 0) {
-        if (isOdd(currentNumber)) {
+        if (isOdd(number)) {
             currentNumber = currentNumber - 1
         } else {
             currentNumber = currentNumber / 2
         }
         numberOfSteps++;
     }
+    return numberOfSteps
 }
 
 let n = 0;
@@ -65,18 +66,12 @@ console.log(n);
 
 
 function isEven(number){
-    if (number / 2){
-        return true
-    } else {}
-    return false
+    return number % 2 === 0;
 }
 function isOdd(number){
-    if (number - 1) {
-        return true
-    } else {
-        return false
-    }
+    return number % 2 === 1;
 }
+
 console.log(isOdd(7));
 
 console.log(isEven(14));
