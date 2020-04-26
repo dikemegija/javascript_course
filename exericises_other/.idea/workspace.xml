@@ -1,20 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="158834b0-0cd5-4c87-b1dd-386a826af2d7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../exercises/.idea/exercises.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../exercises/calculator/tdd test/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../exercises/calculator/tdd test/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../exercises/calculator/tdd test/.idea/tdd test.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../exercises/calculator/tdd test/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../exercises/calculator/tdd test/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Reduce a Number to Zero.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testingexercise.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../exercises/calculator/file.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../exercises/kunit/kunit.js" beforeDir="false" afterPath="$PROJECT_DIR$/../exercises/kunit/kunit.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="158834b0-0cd5-4c87-b1dd-386a826af2d7" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -53,11 +40,11 @@
       <recent name="C:\Users\Megija\Desktop\JavaScript\exericises home" />
     </key>
   </component>
-  <component name="RunManager" selected="Node.js.Reduce a Number to Zero.js">
-    <configuration name="Reduce a Number to Zero.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/Reduce a Number to Zero.js" working-dir="$PROJECT_DIR$">
+  <component name="RunManager" selected="Node.js.reduce number.js">
+    <configuration name="get.js" type="NodeJSConfigurationType" nameIsGenerated="true" path-to-js-file="get.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
-    <configuration name="get.js" type="NodeJSConfigurationType" nameIsGenerated="true" path-to-js-file="get.js" working-dir="$PROJECT_DIR$">
+    <configuration name="reduce number.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/reduce number.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
     <configuration name="testingexercise.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/testingexercise.js" working-dir="$PROJECT_DIR$">
@@ -65,7 +52,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Node.js.Reduce a Number to Zero.js" />
+        <item itemvalue="Node.js.reduce number.js" />
         <item itemvalue="Node.js.testingexercise.js" />
       </list>
     </recent_temporary>
@@ -86,7 +73,7 @@
       <workItem from="1587656555280" duration="45000" />
       <workItem from="1587656690555" duration="86000" />
       <workItem from="1587656983518" duration="1506000" />
-      <workItem from="1587732302124" duration="12680000" />
+      <workItem from="1587732302124" duration="12894000" />
     </task>
     <servers />
   </component>
