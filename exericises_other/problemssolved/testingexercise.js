@@ -37,3 +37,16 @@ function divide (a,b){
 function minus (a,b){
     return a - b;
 }
+
+
+
+//////////
+
+/*/let dateSplited = date1.split("");
+   let datefirst = date1.split('-');
+   console.log(datefirst)
+   let year = parseInt(datefirst[0]);
+   let month = parseInt(datefirst[1]);
+   let day = parseInt(datefirst[2]);
+
+   let together = (`${year}${month}${day}`);*/
